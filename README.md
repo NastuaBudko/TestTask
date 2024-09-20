@@ -1,4 +1,4 @@
-#Holiday Explorer
+# Holiday Explorer
 
 Holiday Explorer is an Angular-based web application that allows users to search for countries and view upcoming public holidays. The project integrates with a backend API to fetch country details and holiday information.
 
