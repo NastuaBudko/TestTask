@@ -1,14 +1,42 @@
-# TestTask
+#Holiday Explorer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+Holiday Explorer is an Angular-based web application that allows users to search for countries and view upcoming public holidays. The project integrates with a backend API to fetch country details and holiday information.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Search for countries by name using a dynamic search input.
+- View the next public holidays in randomly selected countries.
+- Browse a list of countries and navigate to a page that shows detailed information about each country.
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/TestTask.git
+   ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd TestTask
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+1. Start the development server:
+
+    ```bash
+    ng serve
+    ```
+    
+2. Open your browser and navigate to `http://localhost:4200`.
 
 ## Build
 
