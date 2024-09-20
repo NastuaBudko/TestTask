@@ -8,6 +8,10 @@ Holiday Explorer is an Angular-based web application that allows users to search
 - View the next public holidays in randomly selected countries.
 - Browse a list of countries and navigate to a page that shows detailed information about each country.
 
+## Live Demo
+
+Check out the live demo of the [Project](https://testtask-4t5g.onrender.com) on Render.
+
 ### Installation
 
 1. Clone the repository:
