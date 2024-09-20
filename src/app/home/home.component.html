@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="left-container">
+        <div class="input-container">
+            <input placeholder="Search for a country..." [(ngModel)]="inputData" (ngModelChange)="onSearchCountry()">
+            <img [src]="$isSearching() ? 'close-icon.png' : 'search-icon.png'"
+                alt="search or clear icon" class="search-icon" (click)="$isSearching() ? clearSearch() : null">
+        </div>
+        <div class="random-countries-holidays-container">
+            <p class="nearest-holidays-title">Next holidays in countries</p>
+            @for(holiday of $holidays(); track holiday.countryCode) {
+            <div class="country-holiday" [routerLink]="['/country', holiday.countryCode]">
+                <div class="holiday-info-container">
+                    <p class="holiday-country-name">{{holiday.countryName}}</p>
+                    <p>{{holiday.holidays[0].date}}</p>
+                </div>
+                <div class="holiday-name">
+                    <p>{{holiday.holidays[0].name}}</p>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+
+    <div class="list-container">
+        <div class="country-list">
+            <h2>Countries</h2>
+            @for (country of $filteredCountries(); track country.countryCode) {
+            <div [routerLink]="['/country', country.countryCode]" class="country-name">{{country.name}}</div>
+            }
+        </div>
+    </div>
+</div>

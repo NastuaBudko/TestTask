@@ -1,0 +1,57 @@
+p {
+    color: var(--header-color);
+    margin: 0;
+}
+
+.holiday {
+    background-color: var(--cards-background);
+    border-radius: 13px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.holiday-title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.holiday-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    height: 650px;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 15px;
+
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+.country-name {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color)
+}
+
+.year {
+    color: var(--text-color);
+    font-size: 29px;
+}
+
+.pagination {
+    cursor: pointer;
+    font-size: 35px;
+    color: var(--text-color);
+}

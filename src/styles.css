@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: #262a41;
+    --text-color: #ffffff;
+    --secondary-text-color: #3d3e40;
+    --header-color: #2e2f30;
+    --cards-background: #ffffff;
+    --border-color: #8f90a0;
+    --inpur-bg: #3c3f54;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    font-family: 'Raleway';
+    background-color: var(--background-color);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    cursor: default;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.holiday-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 40%;
+}
+
+.list-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-direction: column;
+}

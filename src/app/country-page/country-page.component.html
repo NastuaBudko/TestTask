@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="left-container">
+        <p class="country-name">{{$countryInfo()?.commonName}}, {{$countryInfo()?.region}}</p>
+    </div>
+
+    <div class="list-container">
+        <div class="counter">
+            <div class="pagination" (click)="onMinusYear()">-</div>
+            <div class="year">{{$year()}}</div>
+            <div class="pagination" (click)="onAddYear()">+</div>
+        </div>
+        <div class="holiday-list">
+            @for(holiday of $countryHolidays(); track holiday.date ) {
+            <div class="holiday">
+                <p class="holiday-title">{{holiday.name}}</p>
+                <div class="holiday-info-container">
+                    <p>Date: {{holiday.date}}</p>
+                    <p>Type: {{holiday.types}}</p>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
